@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-box">
+        <h2>Registrasi Hak Merek</h2>
+        <form>
+          <div class="input-box">
+            <input type="text" id="nama" placeholder="Masukkan nama" required />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              id="alamat"
+              placeholder="Masukkan alamat"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              id="kodePos"
+              placeholder="Masukkan kode pos"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              id="nomorPonsel"
+              placeholder="Masukkan nomor ponsel"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input type="email" id="email" placeholder="Masukkan e-mail" />
+          </div>
+          <div class="input-box">
+            <label for="logo">Unggah gambar logo</label>
+            <input
+              id="logo"
+              type="file"
+              accept="image/*"
+              onchange="loadFile1(event)"
+            />
+          </div>
+          <div class="input-box">
+            <label for="tanda">Unggah gambar tanda tangan</label>
+            <input
+              id="tanda"
+              type="file"
+              accept="image/*"
+              onchange="loadFile2(event)"
+            />
+          </div>
+          <input type="submit" class="button" value="Kirim" />
+        </form>
+        <img id="output1" />
+        <img id="output2" />
+        <img id="ttd" src="img/ttd.jpg" />
+      </div>
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>
