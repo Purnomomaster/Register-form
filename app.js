@@ -25,14 +25,14 @@ app.post("/img", upload.none(), function (req, res, next) {
     // port: 465,
     secure: true,
     auth: {
-      user: "pari.purnomo@gmail.com",
-      pass: "abhjhhouvwujphas",
+      user: "",
+      pass: "",
     },
     tls: { rejectUnauthorized: false },
   });
   var mailOption = {
-    from: "pari.purnomo@gmail.com",
-    to: "gurupaud99@gmail.com",
+    from: "",
+    to: "",
     subject: "testing",
     html: `
         no response jsPdf, Thanks.`,
@@ -56,6 +56,6 @@ app.post("/img", upload.none(), function (req, res, next) {
   // res.json({ message: "File(s) uploaded successfully" });
 });
 
-http.Server(app).listen(2024, function () {
-  console.log("Server running on port 2024");
+http.Server(app).listen(3000, function () {
+  console.log("Server running on port 3000");
 });
