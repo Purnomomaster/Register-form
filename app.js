@@ -20,8 +20,8 @@ app.post("/img", upload.none(), function (req, res, next) {
   // req.body contains the text fields
   // console.log(req.body.file); // Logs form body values
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    service: "Gmail",
+    host: "",
+    service: "",
     // port: 465,
     secure: true,
     auth: {
